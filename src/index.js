@@ -51,7 +51,7 @@ export default class WebappManifestPlugin {
           config.icons = images.map(image => ({ src: image, type: lookup(image), sizes: image.match(/(\d{2,3}x\d{2,3})/g)[0] }));
         }
         const source = JSON.stringify(normaliseConfig(config), null, 2);
-        compilation.assets['../manifest.json'] = {
+        compilation.assets['manifest.json'] = {
           source: () => source,
           size: () => source.length,
         };
