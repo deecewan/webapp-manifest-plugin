@@ -1,0 +1,8 @@
+{
+  "presets": [["env"]],
+  "plugins": [
+    "transform-object-rest-spread",
+    "syntax-trailing-function-commas",
+    "transform-class-properties"
+  ]
+}
