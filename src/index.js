@@ -38,7 +38,7 @@ export default class WebappManifestPlugin {
     return function hook(compilation) {
       compilation.plugin(HTML_PLUGIN_BEFORE_PROCESS, (htmlData, callback) => {
         const publicPath = this.options.output.publicPath;
-        htmlData.html = htmlData.html.replace('</head>', `  <link rel="manifest" href="${publicPath}/manifest.json">\n</head>`);
+        htmlData.html = htmlData.html.replace('</head>', `  <link rel="manifest" href="${publicPath}manifest.json">\n</head>`);
         // we want to inject our manifest into the head
         callback(null, htmlData);
       });
