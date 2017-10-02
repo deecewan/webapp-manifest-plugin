@@ -16,6 +16,14 @@
   "license": "MIT",
   "description": "Create a web application manifest for your PWA based on your webpack build.",
   "author": "David Buchan-Swanson <david.buchanswanson+npm@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deecewan/webapp-manifest-plugin.git"
+  },
+  "bugs": {
+    "url": "https://github.com/deecewan/webapp-manifest-plugin/issues"
+  },
+  "homepage": "https://github.com/deecewan/webapp-manifest-plugin#readme",
   "devDependencies": {
     "babel-cli": "^6.24.1",
     "babel-core": "^6.24.1",
